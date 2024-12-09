@@ -1,0 +1,68 @@
+# Image Downloader
+
+This is a Python-based Image Downloader script that allows you to download images from a given URL and save them to a specified folder on your local machine.
+
+## Features
+
+- Automatically detects the image extension from the URL.
+- Saves the image with a user-defined name.
+- Ensures the image is not overwritten by checking for existing files.
+- Automatically creates a folder (`images`) to store downloaded images if it doesn't exist.
+
+## File Structure
+
+. ├── README.md # Project documentation ├── i_d # Placeholder for additional project files ├── images # Directory where images will be stored ├── main.py # Main script to run the application
+
+markdown
+Copy code
+
+## Requirements
+
+- Python 3.10 or higher (for `str | None` type hinting and the walrus operator `:=`)
+- `requests` library (for downloading images)
+
+### Install Dependencies
+
+To install the required dependencies, use the following command:
+
+```bash
+pip install requests
+Usage
+Run the Script: Navigate to the directory containing main.py and run the script using:
+
+bash
+Copy code
+python main.py
+Enter Details:
+
+Input the URL of the image you wish to download.
+Provide a name for the image (without extension).
+Image Download: The script will download the image and save it in the images folder with the specified name and appropriate extension.
+
+Example Input
+less
+Copy code
+Enter a URL: https://example.com/image.jpg
+Enter a name please: my_image
+Example Output
+vbnet
+Copy code
+Downloading...
+Downloaded: "images/my_image.jpg" successfully
+Notes
+The script supports the following image extensions: .png, .jpeg, .jpg, .gif, .svg.
+If the URL does not contain a valid extension, an error will be raised.
+If a file with the same name already exists, the script will notify you and terminate.
+Folder Management
+The images folder will be created automatically if it does not exist.
+All downloaded images will be saved in the images folder.
+License
+This project is open-source and available under the MIT License.
+
+Happy Downloading!
+
+bash
+Copy code
+
+### Instructions for Enhancements:
+If you need additional sections or modifications, let me know!
